@@ -1,0 +1,36 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	 
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "洪湾商户",
+				"navigationBarTextStyle": "black"
+			}
+		}
+        ,{
+            "path" : "pages/orders/orders",
+            "style" : {
+				"navigationBarTitleText": "我的订单",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/dowoder/dowoder",
+            "style" : {
+				"navigationBarTitleText": "提交订单",
+				"navigationBarTextStyle": "black"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	}
+}
